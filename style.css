@@ -1,0 +1,107 @@
+body{
+    margin: 0;
+    color: #005731;
+    text-shadow: 2px 2px 2px #003b0e, 2px 2px 2px #003b0e, 2px 2px 2px #003b0e, 2px 2px 2px #003b0e;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    color: white;
+    text-shadow: 2px 2px 2px #003b0e, -2px 2px 2px #003b0e, 2px -2px 2px #003b0e, -2px -2px 2px #003b0e;
+
+}
+
+button{
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 2px 2px black;
+    transition: all .5s;
+    font-weight: bold;
+    margin: 20px;
+}
+
+button:hover{
+    box-shadow: none;
+}
+
+.numberPlate{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 8px solid #C0C0C0;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px black, 2px -2px 2px black, -2px 2px 2px black, -2px -2px 2px black, 2px 2px 2px black inset, 2px -2px 2px black inset, -2px 2px 2px black inset, -2px -2px 2px black inset;
+    margin: 10px;
+    width: 555px;
+    height: 270px;
+}
+
+.prefecture_number{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.prefecture_number::before{
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -25px;
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    background: #C0C0C0;
+    box-shadow: 2px 2px 2px black, 2px -2px 2px black, -2px 2px 2px black, -2px -2px 2px black;
+}
+
+.prefecture_number::after{
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: -35px;
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    background: #C0C0C0;
+    box-shadow: 2px 2px 2px black, 2px -2px 2px black, -2px 2px 2px black, -2px -2px 2px black;
+}
+
+.prefecture, .subNumber{
+    font-size: 5em;
+    font-weight: bold;
+    line-height: 1.2em;
+    margin-left: 15px;
+}
+
+.hira_number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.hira{
+    font-size: 4em;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.mainNumber{
+    font-size: 8em;
+    line-height: 1.2em;
+    font-weight: bold;
+}
+
+.mainNumber span{
+    margin: 10px;
+}
+
