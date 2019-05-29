@@ -116,6 +116,7 @@ button:hover{
         left: 50%;
         transform: translate(-50%, -50%);
         margin: 10px;
+        font-family: -apple-system,sans-serif;
     }
 
     .box{
@@ -138,7 +139,7 @@ button:hover{
         width: 100px;
         border-radius: 10px;
         cursor: pointer;
-        box-shadow: 0 2px 2px black;
+        box-shadow: 0 2px 2px white;
         transition: all .5s;
         font-weight: bold;
         white-space: nowrap;
