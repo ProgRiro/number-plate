@@ -1,7 +1,9 @@
 body{
     margin: 0;
+    padding: 0;
     color: #005731;
     text-shadow: 2px 2px 2px #003b0e, 2px 2px 2px #003b0e, 2px 2px 2px #003b0e, 2px 2px 2px #003b0e;
+    background-color: #34495e;
 }
 
 .box{
@@ -14,10 +16,10 @@ body{
 .title{
     color: white;
     text-shadow: 2px 2px 2px #003b0e, -2px 2px 2px #003b0e, 2px -2px 2px #003b0e, -2px -2px 2px #003b0e;
-
 }
 
 button{
+    display: block;
     height: 40px;
     width: 100px;
     border-radius: 10px;
@@ -25,7 +27,7 @@ button{
     box-shadow: 0 2px 2px black;
     transition: all .5s;
     font-weight: bold;
-    margin: 20px;
+    margin: 20px auto;
 }
 
 button:hover{
@@ -43,6 +45,7 @@ button:hover{
     margin: 10px;
     width: 555px;
     height: 270px;
+    background-color: #ffffff;
 }
 
 .prefecture_number{
@@ -105,3 +108,43 @@ button:hover{
     margin: 10px;
 }
 
+@media screen and (max-width: 499px) { 
+    /*　画面サイズ 499pxまで適用　*/
+    body{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 10px;
+    }
+
+    .box{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        transform: rotateZ(90deg);
+        width: 100px;
+    }
+
+    .title{
+        color: white;
+        text-shadow: 2px 2px 2px #003b0e, -2px 2px 2px #003b0e, 2px -2px 2px #003b0e, -2px -2px 2px #003b0e;
+        white-space: nowrap;
+    }
+
+    button{
+        height: 40px;
+        width: 100px;
+        border-radius: 10px;
+        cursor: pointer;
+        box-shadow: 0 2px 2px black;
+        transition: all .5s;
+        font-weight: bold;
+        white-space: nowrap;
+        transform: rotateZ(90deg);
+        position: absolute;
+        top: 110%;
+        left: 150%;
+    }
+}
