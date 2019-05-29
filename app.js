@@ -17,4 +17,8 @@ $(function () {
         $subNum.text(Math.floor(Math.random() * 100));
         $hira.text($arrayHira[Math.floor(Math.random() * 39)]);
     })
+
+    $button.dblclick(function () {
+        return false;
+    });
 });
