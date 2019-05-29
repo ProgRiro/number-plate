@@ -146,5 +146,6 @@ button:hover{
         position: absolute;
         top: 110%;
         left: 150%;
+        background-color: #ffffff;
     }
 }
